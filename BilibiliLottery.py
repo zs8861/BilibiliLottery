@@ -60,14 +60,14 @@ print("\n删除重复账号...\n")
 unameList = list(set(unameList)) 
 
 #删除up主自己
-print("删除UP主账号:" + bcolors.OKGREEN + "秦无邪_" + bcolors.ENDC + "\n")
-unameList.remove("秦无邪_") 
+print("删除UP主账号:" + bcolors.OKGREEN + "秦无邪OvO" + bcolors.ENDC + "\n")
+unameList.remove("秦无邪OvO") 
 #for uname in unameList:
 #    print(uname)
 
 print("------开始随机抽奖过程------")
 #开始随机抽奖过程
-prizeQuantity = 20 #设置奖品数量
+prizeQuantity = 10 #设置奖品数量
 for i in range(prizeQuantity):
     biliID = random.choice(unameList)
     for x in range (0,5):  
