@@ -67,15 +67,15 @@ unameList.remove("秦无邪OvO")
 
 print("------开始随机抽奖过程------")
 #开始随机抽奖过程
-prizeQuantity = 10 #设置奖品数量
+prizeQuantity = 49 #设置奖品数量
 for i in range(prizeQuantity):
     biliID = random.choice(unameList)
     for x in range (0,5):  
         b = "抽奖中" + "." * x
         print (b, end="\r")
-        time.sleep(1) 
+        #time.sleep(1) 
     #print(f"{bcolors.OKGREEN}Warning: No active frommets remain. Continue?{bcolors.ENDC}")   
-    print("第" + bcolors.OKGREEN + str(i+1) + bcolors.ENDC + "位中奖用户：" + bcolors.OKGREEN + biliID + bcolors.ENDC)
+    print("第" + bcolors.OKGREEN + str(i+1) + bcolors.ENDC + "位加入游戏用户：" + bcolors.OKGREEN + biliID + bcolors.ENDC)
     unameList.remove(biliID) #防止重复抽取同一人
 print("------抽奖过程结束------")
 
