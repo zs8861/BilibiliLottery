@@ -61,13 +61,14 @@ unameList = list(set(unameList))
 
 #删除up主自己
 print("删除UP主账号:" + bcolors.OKGREEN + "秦无邪OvO" + bcolors.ENDC + "\n")
-unameList.remove("秦无邪OvO") 
+if '秦无邪OvO' in unameList:
+    unameList.remove("秦无邪OvO") 
 #for uname in unameList:
 #    print(uname)
 
 print("------开始随机抽奖过程------")
 #开始随机抽奖过程
-prizeQuantity = 20 #设置奖品数量
+prizeQuantity = 2 #设置奖品数量
 for i in range(prizeQuantity):
     biliID = random.choice(unameList)
     for x in range (0,4):  
@@ -80,3 +81,4 @@ for i in range(prizeQuantity):
 print("------抽奖过程结束------")
 
 print("\n抽奖名单统计完毕！\n")
+
